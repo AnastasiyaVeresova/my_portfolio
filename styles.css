@@ -413,7 +413,7 @@ footer.dark-mode {
 
 .video-container video:hover {
     filter: brightness(100%);
-    transform: scale(2); /* Увеличение при наведении */
+    transform: scale(1); /* Увеличение при наведении */
     z-index: 10; /* Чтобы увеличенное видео было поверх других элементов */
     position: relative; /* Добавлено для корректного наложения */
 }

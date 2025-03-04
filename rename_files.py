@@ -30,7 +30,7 @@ def rename_files_in_directory(directory_path):
                 print(f"Renamed: {old_file} -> {new_file}")
 
 # Путь к папке, в которой нужно переименовать файлы
-base_directory_path = './img'
+base_directory_path = './img/outdoor'
 rename_files_in_directory(base_directory_path)
 
 # python rename_files.py
