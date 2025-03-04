@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <ul>
+                <!-- <li><a href="#about">Обо мне</a></li> -->
+                <!-- <li><a href="#gallery">Галерея</a></li> -->
+                <li><a href="#contact">Контакты</a></li>
+            </ul><br><br>
+            <nav>
+                <ul>
+                    <li><button onclick="scrollToId('image-gallery-outdoor')">Наружная реклама</button></li>
+                    <li><button onclick="scrollToId('image-gallery-web')">Web</button></li>
+                    <li><button onclick="scrollToId('image-gallery-modules')">Модули</button></li>
+                    <li><button onclick="scrollToId('image-gallery-logos')">Логотипы</button></li>
+                    <li><button onclick="scrollToId('image-gallery-3d')">3D</button></li>
+                    <li><button onclick="scrollToId('presentations')">Презентации</button></li>
+                    <li><button onclick="scrollToId('image-gallery-souvenirs')">Прочее</button></li>
+                    <li><button onclick="scrollToId('video-gallery')">Digital</button></li>
+                </ul>
+            </nav>
+        </nav>
+        <!-- <section id="about">
+            <ul class="achievements">
+                <li>Предпочитаю ПРОСТО ДЕЛАТЬ СЛОЖНОЕ, сочетая здравый смысл с чувством юмора</li>
+            </ul>
+        </section> -->
+    </header>
+     <section id="parallax-section" class="parallax">
+        <div class="parallax-content">
+            <h2>VAV</h2>
+            <!-- <p>Пролистайте вниз, чтобы увидеть мои работы</p> -->
+        </div>
+        <div class="parallax-background"></div>
+    </section>
+   
+    <section id="random-image">
+        <img id="random-image-display" src="" alt="Random Image" style="width: 100%; height: auto;">
+        <div id="random-image-description" class="image-description"></div>
+    </section>
+
+    <section id="gallery">
+        <h2>Наружная реклама</h2>
+        <div class="gallery image" id="image-gallery-outdoor"></div>
+        <h2>Web</h2>
+        <div class="gallery image" id="image-gallery-web"></div>
+        <h2>Модули</h2>
+        <div class="gallery image" id="image-gallery-modules"></div>
+                <h2>Логотипы</h2>
+        <div class="gallery image" id="image-gallery-logos"></div>
+        <h2>3D</h2>
+        <div class="gallery image" id="image-gallery-3d"></div>
+        <h2>Прочее</h2>
+        <div class="gallery image" id="image-gallery-souvenirs"></div>
+    </section>
+    
+    <section id="presentations">
+        <h2>Презентации</h2>
+        <select id="presentation-selector">
+        </select>
+        <iframe id="presentation-viewer" src="" width="100%" height="700px" frameborder="0"></iframe>
+    </section>
+
+    <section id="video-gallery">
+        <h2>Digital</h2>
+        <div class="gallery video" id="image-gallery-video"></div>
+    </section>
+
+    <section id="contact">
+        <!-- <h2>Контакты</h2> -->
+        <p><a href="mailto:nastulua@yandex.ru" id="email-link">Почта</a>.</p>
+        <p><a href="https://spb.hh.ru/resume/0856df50ff0110851e0039ed1f706a6e544461" target="_blank" id="hh-link">Hh <i class="fas fa-briefcase"></i></a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2002-2025 Портфолио... Кстати, это пространство разработано и наполнено мной &#128578</p>
+    </footer>
+
+    <div class="theme-switch-container">
+        <label class="theme-switch">
+            <input type="checkbox" id="theme-toggle">
+            <span class="slider"></span>
+            <span class="theme-label">Светлая тема</span>
+        </label>
+    </div>
+
+    <div id="scroll-to-top" class="scroll-to-top">
+        <span>↑</span>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

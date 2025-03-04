@@ -1,0 +1,506 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+hr {
+    width: 70%;
+    color: rgb(0, 0, 0);
+}
+
+header {
+    background-color: #ffffff;
+    color: #fff;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+header h1 {
+    margin: 0;
+    transition: color 0.3s ease;
+}
+
+nav.menu {
+    position: fixed;
+    top: 270px;
+    left: 0;
+    margin-bottom: 10px;
+    transform: translateY(-50%);
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 0 10px 10px 0;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.03);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 10;
+    opacity: 99%;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav.menu.dark-mode {
+    border: 1px solid #ccc;
+    background-color: #333;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    transition: transform 0.3s ease;
+    margin: 3px 0;
+}
+
+nav ul li,
+nav ul li button {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    background-color: #ffffff;
+    border: none;
+    padding: 5px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+    width: 100%;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+nav.menu.dark-mode ul li,
+nav.menu.dark-mode ul li button {
+    color: #fff;
+    background-color: #333;
+    width: 100%;
+    text-align: left;
+}
+
+a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    background-color: #ffffff;
+    border: none;
+    padding: 5px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+    width: 100%;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover,
+nav ul li button:hover {
+    background-color: #dddddd;
+    transform: scale(1.02);
+}
+
+section {
+    padding: 0px 100px;
+    text-align: left;
+    transition: opacity 0.3s ease, color 0.3s ease;
+}
+
+#gallery, #presentations, #video-gallery {
+    transition: background-color 0.3s ease;
+    padding-left: 400px; /* Отступ от левого края */
+    padding-right: 20px; /* Отступ от правого края */
+}
+
+#gallery.dark-mode, #presentations.dark-mode, #video-gallery.dark-mode {
+    background-color: #333;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Выравнивание по левому краю */
+    gap: 20px;
+    position: relative; /* Добавлено для создания контекста наложения */
+    padding-bottom: 20px;
+}
+
+.image img {
+    filter: brightness(75%);
+    transition: transform 0.3s ease, z-index 0.3s ease; /* Плавное изменение размеров и z-index */
+}
+
+.image img:hover {
+    filter: brightness(100%);
+    transform: scale(2); /* Увеличение при наведении */
+    z-index: 10; /* Чтобы увеличенное изображение было поверх других элементов */
+    position: relative; /* Добавлено для корректного наложения */
+}
+
+.gallery img, .gallery video, #image-container {
+    border-radius: 10px;
+    flex: 1 1 calc(33.333% - 20px); /* Каждое изображение или видео занимает примерно треть ширины контейнера */
+    object-fit: cover; /* Изображение или видео будет масштабироваться, чтобы заполнить контейнер без искажений */
+    height: 200px; /* Фиксированная высота для изображений и видео */
+    transition: flex 0.3s ease, object-fit 0.3s ease; /* Плавное изменение размеров и object-fit */
+}
+
+.gallery iframe {
+    width: 100%;
+    height: 600px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #ddd;
+}
+
+#video-gallery {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.image-description {
+    font-size: 14px;
+    color: #555;
+    margin-top: 5px;
+    transition: color 0.3s ease;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+footer.dark-mode {
+    background-color: #fff;
+    color: #333;
+}
+
+#contact {
+    padding: 60px 100px;
+    text-align: center;
+    background-color: #f4f4f4;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#contact.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+#contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+#contact.dark-mode h2 {
+    color: #fff;
+}
+
+#contact a:hover {
+    color: #007bff;
+}
+
+#contact a i {
+    margin-left: 5px;
+}
+
+#contact p {
+    font-size: 1.2em;
+    margin-bottom: 100px;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+#contact.dark-mode p {
+    color: #ffffff;
+}
+
+#contact a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+#contact.dark-mode a {
+    color: #000000;
+}
+
+#about {
+    padding: 40px 20px;
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+    transition: opacity 0.3s ease, color 0.3s ease;
+}
+
+#about h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+#about h3 {
+    font-size: 1.75em;
+    margin-top: 30px;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+#about p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #666;
+    transition: color 0.3s ease;
+}
+
+.achievements {
+    list-style-type: disc;
+    padding-left: 20px;
+    transition: opacity 0.3s ease, color 0.3s ease;
+}
+
+.achievements li {
+    margin: 5px 0;
+    font-size: 1.1em;
+    color: #444;
+    transition: color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+#random-image {
+    width: 70%;
+    padding-left: 400px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 40px;
+    z-index: 3;
+}
+
+#random-image img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+#random-image img.web-image {
+    width: 30%;
+    height: auto;
+}
+
+#random-image-description {
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+    margin-top: 10px;
+    transition: color 0.3s ease;
+}
+
+#random-image-description.dark-mode {
+    color: #fff;
+}
+
+#syzer {
+    width: 500px;
+    height: 809px;
+}
+
+#presentation-selector {
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#presentation-viewer {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #ddd;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.theme-switch-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.theme-switch {
+    display: flex;
+    align-items: center;
+}
+
+.theme-switch input {
+    display: none;
+}
+
+.theme-switch .slider {
+    width: 40px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.theme-switch .slider::before {
+    content: '';
+    width: 18px;
+    height: 18px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    transition: transform 0.3s ease;
+}
+
+.theme-switch input:checked + .slider {
+    background-color: #333;
+}
+
+.theme-switch input:checked + .slider::before {
+    transform: translateX(20px);
+}
+
+.theme-label {
+    margin-left: 10px;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.video-container video {
+    filter: brightness(75%);
+    transition: transform 0.3s ease, z-index 0.3s ease; /* Плавное изменение размеров и z-index */
+}
+
+.video-container video:hover {
+    filter: brightness(100%);
+    transform: scale(2); /* Увеличение при наведении */
+    z-index: 10; /* Чтобы увеличенное видео было поверх других элементов */
+    position: relative; /* Добавлено для корректного наложения */
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.3s ease, background-color 0.3s ease;
+    z-index: 1000;
+}
+
+.scroll-to-top:hover {
+    opacity: 1;
+    background-color: #555;
+}
+
+.scroll-to-top span {
+    font-size: 24px;
+}
+
+.parallax {
+    height: 24vh;
+    /* background-image: url('img/image.jpg'); 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.parallax-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0px 50px 15px 50px;
+    border-radius: 10px;
+    z-index: -1;
+}
+
+.parallax-content h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.parallax-content p {
+    font-size: 1.5em;
+}
+
+.parallax-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+}
+
+.shape {
+    position: absolute;
+    border: 3px solid #ccc;
+    opacity: 0.7;
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to {
+        opacity: 0.7;
+        transform: scale(1);
+    }
+}
