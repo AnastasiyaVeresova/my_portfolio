@@ -4,8 +4,11 @@ document.addEventListener("DOMContentLoaded", function() {
 		"outdoor",
 		"web",
 		"modules",
+		"pack",
 		"presentations",
 		"souvenirs",
+		"illustrations",
+		"sites",
 		"video",
 		"logos",
 		"3d",
@@ -83,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function() {
 						// Добавляем изображение и описание в массив всех изображений, если это не PDF и категория входит в список разрешенных
 						if (
 							!image.file.endsWith(".pdf") &&
-							["outdoor", "souvenirs"].includes(category)
+							["outdoor", "illustrations"].includes(category)
 						) {
 							allImages.push({
 								src: `img/${category}/${image.file}`,
