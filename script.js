@@ -253,7 +253,7 @@ document.addEventListener("DOMContentLoaded", function() {
 		}
 	}
 
-	generateShapes(40);
+	generateShapes(30);
 });
 
 function scrollToId(id) {
