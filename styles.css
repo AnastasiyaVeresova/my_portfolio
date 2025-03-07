@@ -173,6 +173,15 @@ section {
     padding-bottom: 40px;
 }
 
+.video-container:nth-child(7) {
+    /* max-width: 100vw; */
+    /* Ограничение ширины контейнера размером экрана */
+    max-height: 50%;
+    /* Ограничение высоты контейнера размером экрана */
+    overflow: hidden;
+    /* Скрываем все, что выходит за пределы контейнера */
+}
+
 .image-description {
     font-size: 14px;
     color: #555;
