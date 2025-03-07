@@ -209,24 +209,24 @@
 	],
 	"presentations": [
 		{ "file": "2.pdf", "description": "Бизнес-центр \"Ferrum\"" },
-		{ "file": "3.pdf", "description": "Описание для 3.pdf" },
-		{ "file": "4.pdf", "description": "Описание для 4.pdf" },
-		{ "file": "5.pdf", "description": "Описание для 5.pdf" },
-		{ "file": "6.pdf", "description": "Описание для 6.pdf" },
-		{ "file": "7.pdf", "description": "Описание для 7.pdf" },
-		{ "file": "8.pdf", "description": "Описание для 8.pdf" },
-		{ "file": "9.pdf", "description": "Описание для 9.pdf" },
-		{ "file": "10.pdf", "description": "Описание для 10.pdf" },
-		{ "file": "11.pdf", "description": "Описание для 11.pdf" },
-		{ "file": "12.pdf", "description": "Описание для 12.pdf" },
-		{ "file": "13.pdf", "description": "Описание для 13.pdf" },
-		{ "file": "14.pdf", "description": "Описание для 14.pdf" },
-		{ "file": "15.pdf", "description": "Описание для 15.pdf" },
-		{ "file": "16.pdf", "description": "Описание для 16.pdf" },
-		{ "file": "17.pdf", "description": "Описание для 17.pdf" },
-		{ "file": "18.pdf", "description": "Описание для 18.pdf" },
-		{ "file": "19.pdf", "description": "Описание для 19.pdf" },
-		{ "file": "20.pdf", "description": "Описание для 20.pdf" }
+		{ "file": "3.pdf", "description": "Setl Термы.pdf" },
+		{ "file": "4.pdf", "description": "Коттеджный посёлок \"Таун Град\"" },
+		{ "file": "5.pdf", "description": "Коттеджный посёлок \"Таун Град\"" },
+		{ "file": "6.pdf", "description": "Жилой комплекс \"Бионика\".pdf" },
+		{ "file": "7.pdf", "description": "Бизнес-парк \"Полюстрово\".pdf" },
+		{ "file": "8.pdf", "description": "Квартира с уютом.pdf" },
+		{ "file": "9.pdf", "description": "Кольцо из бисера 1.pdf" },
+		{ "file": "10.pdf", "description": "Кольцо из бисера 2.pdf" },
+		{ "file": "11.pdf", "description": "Полуостров.pdf" },
+		{ "file": "12.pdf", "description": "Таунхаусы и участки в Петергофе.pdf" },
+		{ "file": "13.pdf", "description": "Сварог.pdf" },
+		{ "file": "14.pdf", "description": "Управляющая компания \"Теорема\".pdf" },
+		{ "file": "15.pdf", "description": "Жилой комплекс \"Консул\".pdf" },
+		{ "file": "16.pdf", "description": "Пречистенка 13.pdf" },
+		{ "file": "17.pdf", "description": "Стандарты Setl Group.pdf" },
+		{ "file": "18.pdf", "description": "Коттеджный посёлок \"Таун Град.pdf" },
+		{ "file": "19.pdf", "description": "Brand.pdf" },
+		{ "file": "20.pdf", "description": "Коллекция мебели.pdf" }
 	],
 	"souvenirs": [
 		{
@@ -323,7 +323,12 @@
 		{ "file": "4.mp4", "description": "Описание для 4.mp4" },
 		{ "file": "5.mp4", "description": "Описание для 5.mp4" },
 		{ "file": "7.mp4", "description": "Описание для 7.mp4" },
-		{ "file": "9.mov", "description": "Описание для 9.mp4" }
+		{ "file": "9.mov", "description": "Описание для 9.mp4" },
+		{ "file": "10.mp4", "description": "Описание для 10.mp4" },
+		{ "file": "11.mp4", "description": "Описание для 11.mp4" },
+		{ "file": "12.mp4", "description": "Описание для 12.mp4" },
+		{ "file": "13.mp4", "description": "Описание для 13.mp4" },
+		{ "file": "14.mov", "description": "Описание для 14.mp4" }
 	],
 	"logos": [
 		{ "file": "1.jpg", "description": "Описание для 1.jpg" },
@@ -531,7 +536,7 @@
 		{ "file": "160.jpg", "description": "Описание для 160.jpg" },
 		{ "file": "161.jpg", "description": "Описание для 161.jpg" }
 	],
-		"sites": [
+	"sites": [
 		{ "file": "1.gif", "description": "Описание для 1.jpg" },
 		{ "file": "2.jpg", "description": "Описание для 2.jpg" },
 		{ "file": "3.jpg", "description": "Описание для 3.jpg" },
@@ -539,5 +544,5 @@
 		{ "file": "5.gif", "description": "Описание для 5.jpg" },
 		{ "file": "6.jpg", "description": "Описание для 6.jpg" },
 		{ "file": "7.jpg", "description": "Описание для 7.jpg" }
-		]
+	]
 }
