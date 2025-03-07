@@ -317,18 +317,17 @@
 		{ "file": "28.jpg", "description": "Обложка к музыкальному альбому" }
 	],
 	"video": [
-		{ "file": "1.mp4", "description": "Описание для 1.mp4" },
 		{ "file": "2.mp4", "description": "Описание для 2.mp4" },
 		{ "file": "3.mp4", "description": "Описание для 3.mp4" },
 		{ "file": "4.mp4", "description": "Описание для 4.mp4" },
 		{ "file": "5.mp4", "description": "Описание для 5.mp4" },
 		{ "file": "7.mp4", "description": "Описание для 7.mp4" },
-		{ "file": "9.mov", "description": "Описание для 9.mp4" },
+		{ "file": "9.mov", "description": "Описание для 9.mov" },
 		{ "file": "10.mp4", "description": "Описание для 10.mp4" },
 		{ "file": "11.mp4", "description": "Описание для 11.mp4" },
 		{ "file": "12.mp4", "description": "Описание для 12.mp4" },
 		{ "file": "13.mp4", "description": "Описание для 13.mp4" },
-		{ "file": "14.mov", "description": "Описание для 14.mp4" }
+		{ "file": "14.mp4", "description": "Описание для 14.mp4" }
 	],
 	"logos": [
 		{ "file": "1.jpg", "description": "Описание для 1.jpg" },
