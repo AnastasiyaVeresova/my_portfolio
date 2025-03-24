@@ -202,12 +202,14 @@
 		{ "file": "17.gif", "description": "Макет для тары" },
 		{ "file": "18.gif", "description": "Макет для тары" },
 		{ "file": "21.jpg", "description": "Макет для тары с краской \"Аквавит\"" },
+		{"file": "29.jpg", 	"description": "Пакет для управляющей компании \"Теорема\""},
 		{
-			"file": "29.jpg",
-			"description": "Пакет для управляющей компании \"Теорема\""
+			"file": "30.jpg",
+			"description": "Монпасье"
 		}
 	],
 	"presentations": [
+		{ "file": "1.pdf", "description": "Квартира с уютом" },
 		{ "file": "2.pdf", "description": "Бизнес-центр \"Ferrum\"" },
 		{ "file": "3.pdf", "description": "Setl Термы.pdf" },
 		{ "file": "4.pdf", "description": "Коттеджный посёлок \"Таун Град\"" },
